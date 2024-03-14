@@ -5,7 +5,7 @@ BIN          := redis_exporter
 IMAGE        := $(REGISTRY)/$(BIN)
 TAG          := $(shell git describe --exact-match --abbrev=0 2>/dev/null || echo "")
 
-SOURCE_IMAGE := oliver006/redis_exporter:v1.9.0-alpine
+SOURCE_IMAGE := oliver006/redis_exporter:v1.58.0-alpine
 
 .PHONY: push
 push: container
